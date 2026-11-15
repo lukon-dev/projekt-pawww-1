@@ -55,6 +55,8 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   position: sticky;
+  top: 0;
+  background-color: white;
 }
 h1{
     font-size: 70px;
@@ -136,7 +138,7 @@ form input[type="search"]:focus{
     box-shadow: 0 0 5px rgba(128, 128, 0 , 0.3);
     
 }
-.zaloguj{
+.btn{
     color: whitesmoke;
     background-color: var(--oliwkowy);
     padding: 8px 16px;
@@ -145,11 +147,12 @@ form input[type="search"]:focus{
     transition: ease 0.6s;
     font-size: 18px;
 }
-.zaloguj:hover{
+.btn:hover{
     background-color: rgb(10, 88, 10);
     transform: translateY(-2px);
 }
 #wyroznione{
+  
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80");
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,10 +163,11 @@ form input[type="search"]:focus{
   flex-direction: column;
   color: aliceblue;
   min-height: 65vh;
-  position: relative;
-  top: 20px;
-  height: 50px;
   width: 700px;
   font-family: inherit;
+  margin-top: 20px;
 }
-
+.boxes{
+  display: flex;
+  justify-content: space-between;
+}
