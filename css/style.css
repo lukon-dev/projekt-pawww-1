@@ -178,9 +178,9 @@ form input[type="search"]:focus{
   gap: 20px;
   width: 50%;
   margin-bottom: 40px;
-  
 }
 .przepis img{
   height: 300px;
   width: 300px;
+  object-fit: cover;
 }
