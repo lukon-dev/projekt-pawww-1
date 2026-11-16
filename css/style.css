@@ -171,3 +171,16 @@ form input[type="search"]:focus{
   display: flex;
   justify-content: space-between;
 }
+.przepis{
+  display: flex;
+  padding-bottom: 5px;
+  background-color: rgba(0,0,0,0.2);
+  gap: 20px;
+  width: 50%;
+  margin-bottom: 40px;
+  
+}
+.przepis img{
+  height: 300px;
+  width: 300px;
+}
