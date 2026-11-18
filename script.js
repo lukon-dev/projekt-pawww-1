@@ -5,27 +5,30 @@ let current = 0;
 
 
 let  przesun=()=>{
+    current++;
+     if(current >= PRZEPISY.length){
+        current = 0;
+    }
     for(let i = 0; i < PRZEPISY.length;i++){
         PRZEPISY[i].style.display = "none";
     }
     PRZEPISY[current].style.display = "flex";
-    current++;
-    if(current >= PRZEPISY.length){
-        current = 0;
-    }
+    
+   
        
 }
 
 
 let cofnij=()=>{
-     current--;
-    for(let i = 0; i < PRZEPISY.length; i++){
-        PRZEPISY[i].style.display = "none";
-    }
    
-    if(current < 0){
-        current = PRZEPISY.length - 1;
-    }
+     for(let i = 0; i < PRZEPISY.length; i++){
+        PRZEPISY[i].style.display = "none";
+     }
+      current--;
+      if(current < 0){
+            current = PRZEPISY.length - 1;
+        }
+     PRZEPISY[current].style.display = "flex";
 }
 NEXTBTN.addEventListener('click',przesun)
 PREVBTN.addEventListener('click',cofnij)

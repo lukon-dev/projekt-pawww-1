@@ -153,7 +153,7 @@ form input[type="search"]:focus{
 }
 #wyroznione{
   
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80");
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -166,6 +166,15 @@ form input[type="search"]:focus{
   width: 700px;
   font-family: inherit;
   margin-top: 20px;
+  border-radius: 20px;
+  transition: ease 0.5s;
+}
+section img{
+  transition: ease 0.5s;
+}
+#wyroznione, section img:hover{
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .boxes{
   display: flex;
@@ -173,12 +182,16 @@ form input[type="search"]:focus{
 }
 .przepis{
   padding-bottom: 5px;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.1);
   gap: 20px;
-  width: 50%;
+  width: 90%;
   margin-bottom: 40px;
-  border-radius: 7px;
+  border-radius: 17px;
   display: none;
+  justify-content: start;
+  width: fit-content;
+  margin: 10px;
+  padding: 30px;
 }
 .przepis:first-of-type{
   display: flex;
@@ -187,4 +200,40 @@ form input[type="search"]:focus{
   height: 300px;
   width: 300px;
   object-fit: cover;
+}
+section{
+  text-align: center;
+}
+.trudnosc{
+  background-color: skyblue;
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;
+}
+.czas{
+  background-color: rgb(235, 228, 135);
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;
+}
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  margin: 10px;
+}
+section ul li{
+  list-style: none;
+}
+#prevBtn, #nextBtn{
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 3px 2px rgb(3, 46, 3);
+}
+#prevBtn, #nextBtn:hover{
+  cursor: pointer;
 }
