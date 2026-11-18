@@ -54,13 +54,15 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
   background-color: white;
 }
 h1{
     font-size: 70px;
     text-align: center;
+}
+header{
+  position: sticky;
+  top: 0;
 }
 img {
   border-radius: 10px;
@@ -153,24 +155,57 @@ form input[type="search"]:focus{
 }
 #wyroznione{
   
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   flex-direction: column;
   color: aliceblue;
   min-height: 65vh;
   width: 700px;
+  max-width: 100%;
+  padding: 30px 20px 40px;
   font-family: inherit;
   margin-top: 20px;
   border-radius: 20px;
   transition: ease 0.5s;
+  text-align: center;
+
 }
+#wyroznione::before{
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../img/salatka-grecka.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  z-index: 0;
+}
+#wyroznione > *{
+  position: relative;
+  z-index: 1;
+}
+#wyroznione .btn{
+  display: inline-block;
+  margin-top: 15px;
+}
+
 section img{
   transition: ease 0.5s;
+}
+#wyroznione figure{
+  margin: 20px 0;
+}
+#wyroznione img{
+  width: 100%;
+  max-width: 500px;
+  height: 320px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: 8px;
+
 }
 #wyroznione, section img:hover{
   transform: scale(1.01);
