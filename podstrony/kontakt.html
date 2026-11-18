@@ -7,25 +7,119 @@
     <meta name="description" content="Projekt1" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
     <meta name="author" content="Łukasz Klus" />
-    <title>Kontakt</title>
+    <title>Kontakt – Słońce w słoiku</title>
   </head>
   <body>
     <header>
       <nav>
         <p id="logo"><a href="../index.html">Słońce w słoiku</a></p>
         <form action="przepisy.html" method="GET">
-          <input type="search" name="q" placeholder="Wyszukaj..." aria-label="Wyszukaj przepisy" />
+          <input
+            type="search"
+            name="q"
+            placeholder="Wyszukaj..."
+            aria-label="Wyszukaj przepisy"
+          />
         </form>
         <ul>
-              <li><a href="../index.html">Strona główna</a></li>
-              <li><a href="przepisy.html">Przepisy</a></li>
-              <li><a href="kraje.html">Kraje</a></li>
-              <li><a href="porady.html">Porady kulinarne</a></li>
-              <li><a href="kontakt.html" >Kontakt</a></li>
-            </ul>
+          <li><a href="../index.html">Strona główna</a></li>
+          <li><a href="przepisy.html">Przepisy</a></li>
+          <li><a href="kraje.html">Kraje</a></li>
+          <li><a href="porady.html">Porady kulinarne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
       </nav>
-</header>
-    <main></main>
+    </header>
+    <main>
+      <section id="formularz">
+        <h2>Formularz kontaktowy</h2>
+        <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+          <label for="tresc">Treść wiadomości</label> <br />
+          <textarea
+            name="tresc"
+            id="tresc"
+            rows="4"
+            cols="40"
+            required
+          ></textarea>
+          <fieldset>
+            <legend>Dane kontaktowe</legend>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" size="20" required />
+            <br />
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="np.jankowalski@gmail.com"
+              required
+            /><br />
+            <label for="tel">Telefon:</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              size="16"
+              placeholder="123 456 789"
+              pattern="(\+48)?[ \-]?[0-9]{3}[ \-]?[0-9]{3}[ \-]?[0-9]{3}"
+              title="Numer 9-cyfrowy, np. 123456789, 123 456 789 lub +48 123 456 789"
+            /><br />
+          </fieldset>
+          <fieldset>
+            <legend>Preferencje kontaktu</legend>
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="newsletter"
+              value="tak"
+            />
+            <label for="newsletter">Chcę dostawać nowe przepisy e-mailem</label>
+            <p>Preferowana pora kontaktu</p>
+            <input
+              type="radio"
+              id="godz1"
+              name="godz"
+              value="08:00-12:00"
+              required
+            />
+            <label for="godz1">8:00 - 12:00</label><br />
+
+            <input type="radio" name="godz" id="godz2" value="12:00-18:00" />
+            <label for="godz2">12:00 - 18:00</label><br />
+
+            <input
+              type="radio"
+              name="godz"
+              id="godz3"
+              value="18:00-20:00"
+              checked
+            />
+            <label for="godz3">18:00 - 20:00</label>
+            <br />
+            <label for="kuchnia">Kuchnia której dotyczy wiadomość:</label>
+            <select name="kuchnia" id="kuchnia" required>
+              <option value="">--wybierz--</option>
+              <option value="wloska">wloska</option>
+              <option value="grecka">grecka</option>
+              <option value="hiszpanska">hiszpanska</option>
+              <option value="inna">inna</option>
+            </select>
+          </fieldset>
+          <input type="submit" value="Wyślij" />
+          <input type="reset" value="Anuluj" />
+          <fieldset>
+            <legend>Termin</legend>
+
+            <label for="dataOd">Termin od:</label>
+            <input type="date" name="dataOd" id="dataOd" required><br>
+
+            <label for="dataDo">Termin do:</label>
+            <input type="date" name="dataDo" id="dataDo" required><br>
+          </fieldset>
+        </form>
+      </section>
+    </main>
     <footer>
       <p>&copy; 2026 Słońce w słoiku. Wszystkie prawa zastrzeżone</p>
       <p>Autor: Łukasz Klus</p>

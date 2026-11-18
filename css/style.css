@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 a {
-  color: aliceblue;
+  color: var(--oliwkowy);
   text-decoration: none;
 }
 body {
@@ -48,13 +48,98 @@ main {
 }
 nav {
   align-items: center;
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(39, 170, 170, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0 ,0, 0.1);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: white;
+}
+#formularz{
+  padding: 20px;
+  width: 100%;
+}
+#formularz form{
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+#formularz fieldset{
+  border: 2px solid var(--oliwkowy);
+  border-radius: 12px;
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+#formularz input[type="radio"] + label,
+#formularz input[type="checkbox"] + label{
+  font-weight: normal;
+}
+#formularz input[type="text"],
+#formularz input[type="email"],
+#formularz input[type="tel"],
+#formularz input[type="date"],
+#formularz select,
+#formularz textarea{
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+#formularz input[type="submit"],
+#formularz input[type="reset"]{
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px 24px;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+#formularz input[type="submit"]{
+  background-color: var(--oliwkowy);
+  color: white;
+  
+}
+#formularz input[type="submit"]:hover,
+#formularz input[type="checkbox"]:hover{
+  background-color: rgb(10, 88, 10);
+  transform: translateY(-2px);
+  cursor: pointer;
+  
+}
+#formularz input[type="radio"]:hover{
+cursor: pointer;
+}
+#formularz input[type="reset"]{
+  background-color: #e5e5e5;
+  color: #222;
+}
+
+#formularz input[type="reset"]:hover{
+  background-color: #d0d0d0;
+}
+
+#formularz textarea{
+  resize: vertical;
+}
+
+#formularz legend{
+  color: var(--oliwkowy);
+  font-weight: bold;
+  padding: 0 10px;
+}
+#formularz label{
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 h1{
     font-size: 70px;
@@ -63,6 +148,7 @@ h1{
 header{
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 img {
   border-radius: 10px;
@@ -105,7 +191,7 @@ nav ul li {
   padding: 5px;
   transition: all  0.3s linear;
 }
-nav ul li:not(:has(.zaloguj)):hover {
+nav ul li:hover {
   background: rgba(22, 88, 150, 0.3);
   border-radius: 10px;
   cursor: pointer;
@@ -176,7 +262,10 @@ form input[type="search"]:focus{
 #wyroznione::before{
   content: "";
   position: absolute;
-  inset: -20px;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../img/salatka-grecka.jpg");
   background-size: cover;
   background-position: center;
@@ -207,7 +296,7 @@ section img{
   margin-top: 8px;
 
 }
-#wyroznione, section img:hover{
+#wyroznione:hover, section img:hover{
   transform: scale(1.01);
   cursor: pointer;
 }
@@ -269,6 +358,6 @@ section ul li{
   border-radius: 20px;
   box-shadow: 0 0 3px 2px rgb(3, 46, 3);
 }
-#prevBtn, #nextBtn:hover{
+#prevBtn:hover, #nextBtn:hover{
   cursor: pointer;
 }
