@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/logo.jpg">
     <meta name="description" content="Projekt1" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
     <meta name="author" content="Łukasz Klus" />
@@ -12,7 +13,7 @@
   <body>
     <header>
       <nav>
-        <p id="logo"><a href="../index.html">Słońce w słoiku</a></p>
+       <p id="logo"><a href="../index.html"><img src="../img/logo.jpg" alt="">Słońce w słoiku</a></p>
         <form action="przepisy.html" method="GET">
           <input
             type="search"
@@ -31,7 +32,9 @@
       </nav>
     </header>
     <main>
-      <section id="formularz">
+    
+        <h1>Kontakt</h1>
+        <section id="formularz">
         <h2>Formularz kontaktowy</h2>
         <form action="https://webdevbasics.net/scripts/demo.php" method="post">
           <label for="tresc">Treść wiadomości</label> <br />
@@ -100,14 +103,13 @@
             <label for="kuchnia">Kuchnia której dotyczy wiadomość:</label>
             <select name="kuchnia" id="kuchnia" required>
               <option value="">--wybierz--</option>
-              <option value="wloska">wloska</option>
+              <option value="wloska">włoska</option>
               <option value="grecka">grecka</option>
-              <option value="hiszpanska">hiszpanska</option>
+              <option value="hiszpanska">hiszpańska</option>
               <option value="inna">inna</option>
             </select>
           </fieldset>
-          <input type="submit" value="Wyślij" />
-          <input type="reset" value="Anuluj" />
+          
           <fieldset>
             <legend>Termin</legend>
 
@@ -117,6 +119,8 @@
             <label for="dataDo">Termin do:</label>
             <input type="date" name="dataDo" id="dataDo" required><br>
           </fieldset>
+          <input type="submit" value="Wyślij" />
+          <input type="reset" value="Anuluj" />
         </form>
       </section>
     </main>

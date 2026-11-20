@@ -27,10 +27,23 @@ body {
   cursor: pointer;
 }
 #logo a {
+  display: flex;
+  align-items: center;
   color: var(--oliwkowy);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
-  gap: 5px;
+  font-style: italic;
+  font-weight: bold;
+  gap: 10px;
+  transition: color 0.7s ease;
+}
+#logo a:hover{
+  color: rgb(10, 88, 10);
+}
+#logo img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 #logowanie {
   display: flex;
