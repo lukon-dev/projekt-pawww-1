@@ -39,7 +39,10 @@ body {
 }
 #logo a:hover{
   color: rgb(10, 88, 10);
+  
+  
 }
+
 #logo img {
   border-radius: 50%;
   height: 100px;
