@@ -296,9 +296,12 @@ section img{
   margin-top: 8px;
 
 }
-#wyroznione:hover, section img:hover{
+section img:hover{
   transform: scale(1.01);
   cursor: pointer;
+}
+#wyroznione:hover{
+transform: scale(1.01);
 }
 .boxes{
   display: flex;
