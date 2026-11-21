@@ -481,3 +481,12 @@ position: absolute;
 right: 0;
 top: 0;
 }
+
+.kraj figure{
+  margin: 5px;
+}
+.kraj img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
