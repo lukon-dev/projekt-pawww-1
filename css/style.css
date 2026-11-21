@@ -252,7 +252,7 @@ form input[type="search"]:focus{
     box-shadow: 0 0 5px rgba(128, 128, 0 , 0.3);
     
 }
-.btn{
+.btn, #btnSprawdz{
     color: whitesmoke;
     background-color: var(--oliwkowy);
     padding: 8px 16px;
@@ -261,9 +261,10 @@ form input[type="search"]:focus{
     transition: ease 0.6s;
     font-size: 18px;
 }
-.btn:hover{
+.btn:hover, #btnSprawdz:hover{
     background-color: rgb(10, 88, 10);
     transform: translateY(-2px);
+    cursor: pointer;
 }
 #wyroznione{
   
@@ -392,8 +393,8 @@ section{
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
  border: 1px solid rgba(92, 107, 47, 0.25);
   border-left: 5px solid #5c6b2f;
-  border-radius: 14px;
-  border-top-left-radius: 26px; 
+  border-radius: 20px;
+  border-top-left-radius: 30px; 
 }
 .box2{
   display: flex;
@@ -403,9 +404,7 @@ section{
   padding: 5px;
   justify-content: center;
   align-items: center;
-  border-top: 10px double rgb(15, 80, 15);
-  border-radius: 40px;
-  border-top-left-radius: 10px solid #5c6b2f;
+  
   
    
 }
