@@ -424,3 +424,33 @@ section ul li{
 #prevBtn:hover, #nextBtn:hover{
   cursor: pointer;
 }
+.lista-porad{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 70%;
+  gap: 24px;
+  justify-content: center;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+
+}
+.porady-hero h1, h2{
+  color: var(--oliwkowy);
+  font-family: 'Courier New', Courier, monospace;
+  font-style: oblique;
+  
+}
+.porada-karta{
+ border-top: 5px double var(--oliwkowy);
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  padding: 10px;
+  transition: ease 0.5s;
+}
+.porada-karta:hover{
+  transform: scale(1.01);
+}
+
