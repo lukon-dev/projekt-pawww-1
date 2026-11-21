@@ -62,6 +62,15 @@ main {
   align-items: center;
  
 }
+#formularz input[type="submit"]{
+  position: relative;
+  left: 25%;
+}
+#formularz input[type="reset"]{
+  position: relative;
+  left: 25%;
+  background-color: red;
+}
 nav {
   align-items: center;
   border: 1px solid rgba(39, 170, 170, 0.1);
@@ -135,12 +144,13 @@ nav {
 cursor: pointer;
 }
 #formularz input[type="reset"]{
-  background-color: #e5e5e5;
-  color: #222;
+  background-color: #cf6915;
+  color: white;
+  transition: ease 0.3s;
 }
 
 #formularz input[type="reset"]:hover{
-  background-color: #d0d0d0;
+  transform: translateY(-3px)
 }
 
 #formularz textarea{
@@ -347,6 +357,7 @@ transform: scale(1.01);
 section{
   text-align: center;
 }
+
 .trudnosc{
   background-color: skyblue;
   border-radius: 10px;
@@ -363,9 +374,42 @@ section{
   display: flex;
   flex-wrap: wrap;
 }
+
 .box{
   margin: 10px;
 }
+.kraj{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: inherit;
+  font-style: oblique;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ border: 1px solid rgba(92, 107, 47, 0.25);
+  border-left: 5px solid #5c6b2f;
+  border-radius: 14px;
+  border-top-left-radius: 26px; 
+}
+.box2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-top: 10px double rgb(15, 80, 15);
+  border-radius: 40px;
+  border-top-left-radius: 10px solid #5c6b2f;
+  
+   
+}
+
 section ul li{
   list-style: none;
 }
