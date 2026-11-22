@@ -178,7 +178,7 @@ img {
     min-height: 75vh;
     min-width: 100%;
     color: var(--jasny);
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?auto=format&fit=crop&w=1600&q=80");
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/tlo-intro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -322,11 +322,9 @@ section img:hover{
 transform: scale(1.01);
 }
 .boxes{
-  .boxes{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
 }
 .przepis{
   background-color: var(--czern-10);
