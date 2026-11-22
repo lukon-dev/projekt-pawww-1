@@ -24,9 +24,7 @@ let  przesun=()=>{
 let przekieruj=()=>{
     window.location.href = "podstrony/przepisy.html#salatka-grecka";
 }
-let zobacz=()=>{
-    window.location.href = "podstrony.przepisy.html#spaghetti-pomodoro";
-}
+
 let cofnij=()=>{
    
      for(let i = 0; i < PRZEPISY.length; i++){

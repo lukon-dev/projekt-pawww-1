@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.png" />
-    <meta name="description" content="Projekt1" />
+    <meta name="description" content="Projekt 1" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
     <meta name="author" content="Łukasz Klus" />
     <title>Słońce w słoiku – kuchnia śródziemnomorska</title>
@@ -18,9 +18,7 @@
             ><img src="img/logo.jpg" alt="" />Słońce w słoiku</a
           >
         </p>
-        <form action="podstrony/przepisy.html" method="GET">
-          <input type="search" name="q" placeholder="Wyszukaj..." />
-        </form>
+
         <ul>
           <li><a href="index.html">Strona główna</a></li>
           <li><a href="podstrony/przepisy.html">Przepisy</a></li>
@@ -32,7 +30,10 @@
     </header>
     <main>
       <section id="intro">
-        <span id="czasData"></span>
+        <div id="czasData">
+          <span id="data"></span>
+          <span id="czas"></span>
+        </div>
         <h1>Smak słońca na Twoim talerzu</h1>
         <p>
           Odkryj <strong>sekrety kuchni śródziemnomorskiej</strong> pełnej
@@ -104,7 +105,7 @@
             <div class="box">
               <img src="img/pizza.jpg" alt="Pizza margherita z bazylią" />
               <p><strong>Pizza margherita</strong></p>
-              <span class="czas">45 min</span>
+              <span class="czas">50 min</span>
               <span class="trudnosc">średnie</span>
             </div>
             <div class="box">
