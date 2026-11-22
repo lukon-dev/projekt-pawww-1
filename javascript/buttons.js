@@ -22,7 +22,10 @@ let  przesun=()=>{
 }
 
 let przekieruj=()=>{
-    window.location.href = "podstrony/przepisy.html#salatka-grecka"
+    window.location.href = "podstrony/przepisy.html#salatka-grecka";
+}
+let zobacz=()=>{
+    window.location.href = "podstrony.przepisy.html#spaghetti-pomodoro";
 }
 let cofnij=()=>{
    
@@ -40,6 +43,8 @@ if(location.hash === "#salatka-grecka"){
         PRZEPISY[0].style.display = "none";
     }
 
+
+   
 if (NEXTBTN) NEXTBTN.addEventListener('click', przesun);
 if (PREVBTN) PREVBTN.addEventListener('click', cofnij);
 if (btnSprawdz) btnSprawdz.addEventListener('click', przekieruj);
