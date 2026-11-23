@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="icon" href="../img/favicon.png">
+    <link rel="icon" href="../img/favicon.png" />
     <meta name="description" content="Projekt 1" />
     <meta name="keywords" content="HTML5, CSS3, JavaScript" />
     <meta name="author" content="Łukasz Klus" />
@@ -12,268 +12,417 @@
   </head>
   <body>
     <header>
-    <nav>
-        <p id="logo"><a href="../index.html"><img src="../img/logo.jpg" alt="">Słońce w słoiku</a></p>
-      
+      <nav>
+        <p id="logo">
+          <a href="../index.html"
+            ><img
+              src="../img/logo.jpg"
+              alt="Logo Słońce w słoiku, słoik z zachodzącym słońcem"
+            />Słońce w słoiku</a
+          >
+        </p>
         <ul>
-            <li><a href="../index.html">Strona główna</a></li>
-            <li><a href="przepisy.html">Przepisy</a></li>
-            <li><a href="kraje.html">Kraje</a></li>
-            <li><a href="porady.html">Porady kulinarne</a></li>
-            <li><a href="kontakt.html" >Kontakt</a></li>
-          </ul>
+          <li><a href="../index.html">Strona główna</a></li>
+          <li><a href="przepisy.html">Przepisy</a></li>
+          <li><a href="kraje.html">Kraje</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="porady.html">Porady kulinarne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
       </nav>
     </header>
-<main>
-  <h1>Przepisy</h1>
+    <main>
+      <h1>Przepisy</h1>
 
+      <article class="przepis" id="spaghetti-pomodoro">
+        <figure>
+          <img
+            src="../img/spaghetti.jpg"
+            alt="Talerz spaghetti z sosem pomidorowym"
+          />
+          <figcaption>
+            Spaghetti pomodoro. Zdjęcie: Orkun Orcan,
+            <a
+              href="https://unsplash.com/photos/a-white-plate-topped-with-pasta-covered-in-sauce-w0GyGNyGo6Y"
+              target="_blank"
+              rel="noopener"
+              >Unsplash</a
+            >
+          </figcaption>
+        </figure>
+        <div class="tresc">
+          <h2>Spaghetti pomodoro</h2>
+          <p class="meta">
+            <span class="czas">25 min</span>
+            <span class="trudnosc">łatwe</span>
+          </p>
+          <p>
+            Klasyk kuchni włoskiej z prostych składników: dojrzałych pomidorów,
+            czosnku i świeżej bazylii.
+          </p>
+          <h3>Składniki (2 porcje)</h3>
+          <ul>
+            <li>200 g spaghetti</li>
+            <li>400 g pomidorów w puszce</li>
+            <li>2 ząbki czosnku</li>
+            <li>2 łyżki oliwy z oliwek</li>
+            <li>garść świeżej bazylii</li>
+            <li>sól i pieprz do smaku</li>
+          </ul>
+          <h3>Przygotowanie</h3>
+          <ol>
+            <li>Ugotuj makaron al dente w osolonej wodzie.</li>
+            <li>
+              Na oliwie zeszklij posiekany czosnek, nie dopuszczając do
+              przypalenia.
+            </li>
+            <li>
+              Dodaj pomidory, dopraw solą i pieprzem i duś około 10 minut.
+            </li>
+            <li>Odcedzony makaron wymieszaj z sosem.</li>
+            <li>Podawaj z listkami świeżej bazylii.</li>
+          </ol>
+          <table>
+            <caption>
+              Wartości odżywcze (jedna porcja)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Składnik</th>
+                <th scope="col">Ilość</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kalorie</td>
+                <td>ok. 510 kcal</td>
+              </tr>
+              <tr>
+                <td>Białko</td>
+                <td>ok. 14 g</td>
+              </tr>
+              <tr>
+                <td>Węglowodany</td>
+                <td>ok. 78 g</td>
+              </tr>
+              <tr>
+                <td>Tłuszcz</td>
+                <td>ok. 14 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-  <article class="przepis" id="spaghetti-pomodoro">
-    <figure>
-      <img src="../img/spaghetti.jpg" alt="Talerz spaghetti z sosem pomidorowym" />
-      <figcaption>
-        Spaghetti pomodoro. Zdjęcie: Orkun Orcan,
-        <a href="https://unsplash.com/photos/a-white-plate-topped-with-pasta-covered-in-sauce-w0GyGNyGo6Y" target="_blank" rel="noopener">Unsplash</a>
-      </figcaption>
-    </figure>
-    <div class="tresc">
-      <h2>Spaghetti pomodoro</h2>
-      <p class="meta">
-        <span class="czas">25 min</span>
-        <span class="trudnosc">łatwe</span>
-      </p>
-      <p>Klasyk kuchni włoskiej z prostych składników: dojrzałych pomidorów, czosnku i świeżej bazylii.</p>
-      <h3>Składniki (2 porcje)</h3>
-      <ul>
-        <li>200 g spaghetti</li>
-        <li>400 g pomidorów w puszce</li>
-        <li>2 ząbki czosnku</li>
-        <li>2 łyżki oliwy z oliwek</li>
-        <li>garść świeżej bazylii</li>
-        <li>sól i pieprz do smaku</li>
-      </ul>
-      <h3>Przygotowanie</h3>
-      <ol>
-        <li>Ugotuj makaron al dente w osolonej wodzie.</li>
-        <li>Na oliwie zeszklij posiekany czosnek, nie dopuszczając do przypalenia.</li>
-        <li>Dodaj pomidory, dopraw solą i pieprzem i duś około 10 minut.</li>
-        <li>Odcedzony makaron wymieszaj z sosem.</li>
-        <li>Podawaj z listkami świeżej bazylii.</li>
-      </ol>
-      <table>
-        <caption>Wartości odżywcze (jedna porcja)</caption>
-        <thead>
-          <tr><th scope="col">Składnik</th><th scope="col">Ilość</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kalorie</td><td>ok. 510 kcal</td></tr>
-          <tr><td>Białko</td><td>ok. 14 g</td></tr>
-          <tr><td>Węglowodany</td><td>ok. 78 g</td></tr>
-          <tr><td>Tłuszcz</td><td>ok. 14 g</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </article>
+      <article class="przepis" id="pizza-margherita">
+        <figure>
+          <img
+            src="../img/pizza.jpg"
+            alt="Pizza z pomidorkami koktajlowymi, mozzarellą i bazylią"
+          />
+          <figcaption>
+            Pizza margherita. Zdjęcie: Diego Arenas de Rodrigo,
+            <a
+              href="https://unsplash.com/photos/a-delicious-pizza-with-cherry-tomatoes-and-basil-XIcLJbzoj2Q"
+              target="_blank"
+              rel="noopener"
+              >Unsplash</a
+            >
+          </figcaption>
+        </figure>
+        <div class="tresc">
+          <h2>Pizza margherita</h2>
+          <p class="meta">
+            <span class="czas">50 min</span>
+            <span class="trudnosc">średnie</span>
+          </p>
+          <p>
+            Neapolitański klasyk w barwach włoskiej flagi: czerwony sos, biała
+            mozzarella i zielona bazylia.
+          </p>
+          <h3>Składniki (2 małe pizze)</h3>
+          <ul>
+            <li>300 g mąki pszennej</li>
+            <li>200 ml letniej wody</li>
+            <li>7 g suchych drożdży</li>
+            <li>200 g passaty pomidorowej</li>
+            <li>125 g mozzarelli</li>
+            <li>garść świeżej bazylii</li>
+            <li>2 łyżki oliwy z oliwek, sól</li>
+          </ul>
+          <h3>Przygotowanie</h3>
+          <ol>
+            <li>
+              Wymieszaj mąkę z drożdżami i solą, dodaj wodę oraz oliwę i
+              wyrabiaj ciasto około 8 minut.
+            </li>
+            <li>Przykryj ciasto i odstaw na 30 minut do wyrośnięcia.</li>
+            <li>Rozwałkuj dwa placki i posmaruj je passatą.</li>
+            <li>Rozłóż pokrojoną mozzarellę i piecz 10–12 minut w 250°C.</li>
+            <li>Posyp świeżą bazylią i skrop oliwą.</li>
+          </ol>
+          <table>
+            <caption>
+              Wartości odżywcze (jedna mała pizza)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Składnik</th>
+                <th scope="col">Ilość</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kalorie</td>
+                <td>ok. 800 kcal</td>
+              </tr>
+              <tr>
+                <td>Białko</td>
+                <td>ok. 28 g</td>
+              </tr>
+              <tr>
+                <td>Węglowodany</td>
+                <td>ok. 105 g</td>
+              </tr>
+              <tr>
+                <td>Tłuszcz</td>
+                <td>ok. 24 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-  
-  <article class="przepis" id="pizza-margherita">
-    <figure>
-      <img src="../img/pizza.jpg" alt="Pizza z pomidorkami koktajlowymi, mozzarellą i bazylią" />
-      <figcaption>
-        Pizza margherita. Zdjęcie: Diego Arenas de Rodrigo,
-        <a href="https://unsplash.com/photos/a-delicious-pizza-with-cherry-tomatoes-and-basil-XIcLJbzoj2Q" target="_blank" rel="noopener">Unsplash</a>
-      </figcaption>
-    </figure>
-    <div class="tresc">
-      <h2>Pizza margherita</h2>
-      <p class="meta">
-        <span class="czas">50 min</span>
-        <span class="trudnosc">średnie</span>
-      </p>
-      <p>Neapolitański klasyk w barwach włoskiej flagi: czerwony sos, biała mozzarella i zielona bazylia.</p>
-      <h3>Składniki (2 małe pizze)</h3>
-      <ul>
-        <li>300 g mąki pszennej</li>
-        <li>200 ml letniej wody</li>
-        <li>7 g suchych drożdży</li>
-        <li>200 g passaty pomidorowej</li>
-        <li>125 g mozzarelli</li>
-        <li>garść świeżej bazylii</li>
-        <li>2 łyżki oliwy z oliwek, sól</li>
-      </ul>
-      <h3>Przygotowanie</h3>
-      <ol>
-        <li>Wymieszaj mąkę z drożdżami i solą, dodaj wodę oraz oliwę i wyrabiaj ciasto około 8 minut.</li>
-        <li>Przykryj ciasto i odstaw na 30 minut do wyrośnięcia.</li>
-        <li>Rozwałkuj dwa placki i posmaruj je passatą.</li>
-        <li>Rozłóż pokrojoną mozzarellę i piecz 10–12 minut w 250°C.</li>
-        <li>Posyp świeżą bazylią i skrop oliwą.</li>
-      </ol>
-      <table>
-        <caption>Wartości odżywcze (jedna mała pizza)</caption>
-        <thead>
-          <tr><th scope="col">Składnik</th><th scope="col">Ilość</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kalorie</td><td>ok. 800 kcal</td></tr>
-          <tr><td>Białko</td><td>ok. 28 g</td></tr>
-          <tr><td>Węglowodany</td><td>ok. 105 g</td></tr>
-          <tr><td>Tłuszcz</td><td>ok. 24 g</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </article>
+      <article class="przepis" id="salatka-grecka">
+        <figure>
+          <img
+            src="../img/salatka-grecka.jpg"
+            alt="Sałatka grecka z fetą, ogórkiem i pomidorami"
+          />
+          <figcaption>
+            Sałatka grecka (Horiatiki). Zdjęcie: uvlik05,
+            <a
+              href="https://pixabay.com/p-2173214/"
+              target="_blank"
+              rel="noopener"
+              >Pixabay</a
+            >
+          </figcaption>
+        </figure>
+        <div class="tresc">
+          <h2>Sałatka grecka (Horiatiki)</h2>
+          <p class="meta">
+            <span class="czas">15 min</span>
+            <span class="trudnosc">łatwe</span>
+          </p>
+          <p>
+            Chrupiące warzywa, oliwki i kawałek fety polane oliwą. Bez sałaty i
+            bez sosu, tak jak w Grecji.
+          </p>
+          <h3>Składniki (2 porcje)</h3>
+          <ul>
+            <li>2 dojrzałe pomidory</li>
+            <li>1 ogórek</li>
+            <li>1 mała czerwona cebula</li>
+            <li>1 zielona papryka</li>
+            <li>100 g sera feta</li>
+            <li>garść oliwek kalamata</li>
+            <li>3 łyżki oliwy z oliwek, oregano, sól</li>
+          </ul>
+          <h3>Przygotowanie</h3>
+          <ol>
+            <li>Pokrój pomidory, ogórek i paprykę w grube kawałki.</li>
+            <li>
+              Cebulę pokrój w półplasterki i dodaj do warzyw razem z oliwkami.
+            </li>
+            <li>Przełóż do miski i dopraw solą.</li>
+            <li>Na wierzchu połóż cały kawałek fety.</li>
+            <li>Polej oliwą i posyp oregano.</li>
+          </ol>
+          <table>
+            <caption>
+              Wartości odżywcze (jedna porcja)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Składnik</th>
+                <th scope="col">Ilość</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kalorie</td>
+                <td>ok. 320 kcal</td>
+              </tr>
+              <tr>
+                <td>Białko</td>
+                <td>ok. 9 g</td>
+              </tr>
+              <tr>
+                <td>Węglowodany</td>
+                <td>ok. 12 g</td>
+              </tr>
+              <tr>
+                <td>Tłuszcz</td>
+                <td>ok. 27 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
+      <article class="przepis" id="losos-z-cytryna">
+        <figure>
+          <img src="../img/losos.jpg" alt="Pieczony łosoś na białym talerzu" />
+          <figcaption>
+            Łosoś z cytryną. Zdjęcie: Jeff Ahmadi,
+            <a
+              href="https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-Iq0rbPBXJ8Y"
+              target="_blank"
+              rel="noopener"
+              >Unsplash</a
+            >
+          </figcaption>
+        </figure>
+        <div class="tresc">
+          <h2>Łosoś z cytryną</h2>
+          <p class="meta">
+            <span class="czas">30 min</span>
+            <span class="trudnosc">łatwe</span>
+          </p>
+          <p>
+            Soczysty łosoś pieczony z cytryną, czosnkiem i ziołami. Prosty obiad
+            w stylu śródziemnomorskim.
+          </p>
+          <h3>Składniki (2 porcje)</h3>
+          <ul>
+            <li>2 filety z łososia (ok. 150 g każdy)</li>
+            <li>1 cytryna</li>
+            <li>2 łyżki oliwy z oliwek</li>
+            <li>2 ząbki czosnku</li>
+            <li>świeży koperek lub tymianek</li>
+            <li>sól i pieprz do smaku</li>
+          </ul>
+          <h3>Przygotowanie</h3>
+          <ol>
+            <li>Nagrzej piekarnik do 200°C.</li>
+            <li>
+              Połóż filety na blasze z papierem do pieczenia, dopraw solą i
+              pieprzem.
+            </li>
+            <li>Polej oliwą wymieszaną z posiekanym czosnkiem.</li>
+            <li>Obłóż plasterkami cytryny i ziołami.</li>
+            <li>Piecz 15–18 minut i skrop sokiem z cytryny.</li>
+          </ol>
+          <table>
+            <caption>
+              Wartości odżywcze (jedna porcja)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Składnik</th>
+                <th scope="col">Ilość</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kalorie</td>
+                <td>ok. 380 kcal</td>
+              </tr>
+              <tr>
+                <td>Białko</td>
+                <td>ok. 33 g</td>
+              </tr>
+              <tr>
+                <td>Węglowodany</td>
+                <td>ok. 2 g</td>
+              </tr>
+              <tr>
+                <td>Tłuszcz</td>
+                <td>ok. 27 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-  <article class="przepis" id="salatka-grecka">
-    <figure>
-      <img src="../img/salatka-grecka.jpg" alt="Sałatka grecka z fetą, ogórkiem i pomidorami" />
-      <figcaption>
-        Sałatka grecka (Horiatiki). Zdjęcie: uvlik05,
-        <a href="https://pixabay.com/p-2173214/" target="_blank" rel="noopener">Pixabay</a>
-      </figcaption>
-    </figure>
-    <div class="tresc">
-      <h2>Sałatka grecka (Horiatiki)</h2>
-      <p class="meta">
-        <span class="czas">15 min</span>
-        <span class="trudnosc">łatwe</span>
-      </p>
-      <p>Chrupiące warzywa, oliwki i kawałek fety polane oliwą. Bez sałaty i bez sosu, tak jak w Grecji.</p>
-      <h3>Składniki (2 porcje)</h3>
-      <ul>
-        <li>2 dojrzałe pomidory</li>
-        <li>1 ogórek</li>
-        <li>1 mała czerwona cebula</li>
-        <li>1 zielona papryka</li>
-        <li>100 g sera feta</li>
-        <li>garść oliwek kalamata</li>
-        <li>3 łyżki oliwy z oliwek, oregano, sól</li>
-      </ul>
-      <h3>Przygotowanie</h3>
-      <ol>
-        <li>Pokrój pomidory, ogórek i paprykę w grube kawałki.</li>
-        <li>Cebulę pokrój w półplasterki i dodaj do warzyw razem z oliwkami.</li>
-        <li>Przełóż do miski i dopraw solą.</li>
-        <li>Na wierzchu połóż cały kawałek fety.</li>
-        <li>Polej oliwą i posyp oregano.</li>
-      </ol>
-      <table>
-        <caption>Wartości odżywcze (jedna porcja)</caption>
-        <thead>
-          <tr><th scope="col">Składnik</th><th scope="col">Ilość</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kalorie</td><td>ok. 320 kcal</td></tr>
-          <tr><td>Białko</td><td>ok. 9 g</td></tr>
-          <tr><td>Węglowodany</td><td>ok. 12 g</td></tr>
-          <tr><td>Tłuszcz</td><td>ok. 27 g</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </article>
-
- 
-  <article class="przepis" id="losos-z-cytryna">
-    <figure>
-      <img src="../img/losos.jpg" alt="Pieczony łosoś na białym talerzu" />
-      <figcaption>
-        Łosoś z cytryną. Zdjęcie: Jeff Ahmadi,
-        <a href="https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-Iq0rbPBXJ8Y" target="_blank" rel="noopener">Unsplash</a>
-      </figcaption>
-    </figure>
-    <div class="tresc">
-      <h2>Łosoś z cytryną</h2>
-      <p class="meta">
-        <span class="czas">30 min</span>
-        <span class="trudnosc">łatwe</span>
-      </p>
-      <p>Soczysty łosoś pieczony z cytryną, czosnkiem i ziołami. Prosty obiad w stylu śródziemnomorskim.</p>
-      <h3>Składniki (2 porcje)</h3>
-      <ul>
-        <li>2 filety z łososia (ok. 150 g każdy)</li>
-        <li>1 cytryna</li>
-        <li>2 łyżki oliwy z oliwek</li>
-        <li>2 ząbki czosnku</li>
-        <li>świeży koperek lub tymianek</li>
-        <li>sól i pieprz do smaku</li>
-      </ul>
-      <h3>Przygotowanie</h3>
-      <ol>
-        <li>Nagrzej piekarnik do 200°C.</li>
-        <li>Połóż filety na blasze z papierem do pieczenia, dopraw solą i pieprzem.</li>
-        <li>Polej oliwą wymieszaną z posiekanym czosnkiem.</li>
-        <li>Obłóż plasterkami cytryny i ziołami.</li>
-        <li>Piecz 15–18 minut i skrop sokiem z cytryny.</li>
-      </ol>
-      <table>
-        <caption>Wartości odżywcze (jedna porcja)</caption>
-        <thead>
-          <tr><th scope="col">Składnik</th><th scope="col">Ilość</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kalorie</td><td>ok. 380 kcal</td></tr>
-          <tr><td>Białko</td><td>ok. 33 g</td></tr>
-          <tr><td>Węglowodany</td><td>ok. 2 g</td></tr>
-          <tr><td>Tłuszcz</td><td>ok. 27 g</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </article>
-
-
-  <article class="przepis" id="gazpacho">
-    <figure>
-      <img src="../img/gazpacho.jpg" alt="Miska czerwonego gazpacho z oliwą i bazylią" />
-      <figcaption>Gazpacho. Obraz wygenerowany przez AI (Gemini).</figcaption>
-    </figure>
-    <div class="tresc">
-      <h2>Gazpacho</h2>
-      <p class="meta">
-        <span class="czas">15 min</span>
-        <span class="trudnosc">łatwe</span>
-      </p>
-      <p>Hiszpańska zimna zupa z surowych warzyw, idealna na upał. Przed podaniem trzeba ją schłodzić.</p>
-      <h3>Składniki (2 porcje)</h3>
-      <ul>
-        <li>500 g dojrzałych pomidorów</li>
-        <li>1 ogórek</li>
-        <li>1 czerwona papryka</li>
-        <li>1 ząbek czosnku</li>
-        <li>kromka czerstwego chleba</li>
-        <li>2 łyżki oliwy z oliwek</li>
-        <li>1 łyżka octu winnego, sól</li>
-      </ul>
-      <h3>Przygotowanie</h3>
-      <ol>
-        <li>Pokrój pomidory, ogórek i paprykę, a chleb namocz w wodzie.</li>
-        <li>Zmiksuj wszystko z czosnkiem, oliwą i octem na gładką zupę.</li>
-        <li>Dopraw solą do smaku.</li>
-        <li>Schłodź w lodówce co najmniej 2 godziny.</li>
-        <li>Podawaj zimne, skropione oliwą.</li>
-      </ol>
-      <table>
-        <caption>Wartości odżywcze (jedna porcja)</caption>
-        <thead>
-          <tr><th scope="col">Składnik</th><th scope="col">Ilość</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Kalorie</td><td>ok. 190 kcal</td></tr>
-          <tr><td>Białko</td><td>ok. 4 g</td></tr>
-          <tr><td>Węglowodany</td><td>ok. 20 g</td></tr>
-          <tr><td>Tłuszcz</td><td>ok. 10 g</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </article>
-  <div class="strzalki">
-    <button type="button" id="prevBtn">&larr;</button>
-    <button type="button" id="nextBtn">&rarr;</button>
-  </div>
-</main>
- <footer>
+      <article class="przepis" id="gazpacho">
+        <figure>
+          <img
+            src="../img/gazpacho.jpg"
+            alt="Miska czerwonego gazpacho z oliwą i bazylią"
+          />
+          <figcaption>
+            Gazpacho. Obraz wygenerowany przez AI (Gemini).
+          </figcaption>
+        </figure>
+        <div class="tresc">
+          <h2>Gazpacho</h2>
+          <p class="meta">
+            <span class="czas">15 min</span>
+            <span class="trudnosc">łatwe</span>
+          </p>
+          <p>
+            Hiszpańska zimna zupa z surowych warzyw, idealna na upał. Przed
+            podaniem trzeba ją schłodzić.
+          </p>
+          <h3>Składniki (2 porcje)</h3>
+          <ul>
+            <li>500 g dojrzałych pomidorów</li>
+            <li>1 ogórek</li>
+            <li>1 czerwona papryka</li>
+            <li>1 ząbek czosnku</li>
+            <li>kromka czerstwego chleba</li>
+            <li>2 łyżki oliwy z oliwek</li>
+            <li>1 łyżka octu winnego, sól</li>
+          </ul>
+          <h3>Przygotowanie</h3>
+          <ol>
+            <li>Pokrój pomidory, ogórek i paprykę, a chleb namocz w wodzie.</li>
+            <li>Zmiksuj wszystko z czosnkiem, oliwą i octem na gładką zupę.</li>
+            <li>Dopraw solą do smaku.</li>
+            <li>Schłodź w lodówce co najmniej 2 godziny.</li>
+            <li>Podawaj zimne, skropione oliwą.</li>
+          </ol>
+          <table>
+            <caption>
+              Wartości odżywcze (jedna porcja)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Składnik</th>
+                <th scope="col">Ilość</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kalorie</td>
+                <td>ok. 190 kcal</td>
+              </tr>
+              <tr>
+                <td>Białko</td>
+                <td>ok. 4 g</td>
+              </tr>
+              <tr>
+                <td>Węglowodany</td>
+                <td>ok. 20 g</td>
+              </tr>
+              <tr>
+                <td>Tłuszcz</td>
+                <td>ok. 10 g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <div class="strzalki">
+        <button type="button" id="prevBtn">&larr;</button>
+        <button type="button" id="nextBtn">&rarr;</button>
+      </div>
+    </main>
+    <footer>
       <p>&copy; 2026 Słońce w słoiku. Wszystkie prawa zastrzeżone</p>
-<p>Autor: Łukasz Klus</p>
+      <p>Autor: Łukasz Klus</p>
     </footer>
     <script src="../javascript/buttons.js" defer></script>
   </body>
