@@ -471,3 +471,28 @@ top: 0;
   height: 350px;
   object-fit: cover;
 }
+#duze{
+max-width: 50%;
+object-fit: cover;
+margin: 30px;
+transition: ease 0.5s;
+
+}
+#duze:hover{
+transform: scale(1.05);
+}
+#miniatury{
+  display: flex;
+  flex-wrap: wrap;
+}
+#miniatury img{
+  margin: 10px;
+  width: 50%;
+}
+#miniatury img:hover{
+  border: 5px solid var(--oliwkowy);
+  border-radius: 10px;
+  margin: 10px;
+  width: 50%;
+  cursor: pointer;
+}
