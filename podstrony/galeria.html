@@ -1,22 +1,20 @@
 <!doctype html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/favicon.png">
-    <meta name="description" content="Projekt 1">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript">
-    <meta name="author" content="Łukasz Klus">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/favicon.png" />
+    <meta name="description" content="Projekt 1" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <meta name="author" content="Łukasz Klus" />
     <title>Galeria – Słońce w słoiku</title>
   </head>
   <body>
     <header>
       <nav>
         <p id="logo">
-          <a href="../index.html"
-            ><img src="../img/logo.jpg" alt="">Słońce w słoiku</a
-          >
+          <a href="../index.html"></a>
         </p>
         <ul>
           <li><a href="../index.html">Strona główna</a></li>
@@ -31,24 +29,56 @@
 
     <main>
       <h1>Galeria</h1>
-      <p id="intro-galeria">Rozgość się między smakami i kadrami z podróży. Kliknij dowolną miniaturę, żeby przyjrzeć się ujęciu z bliska.</p>
+      <p id="intro-galeria">
+        Rozgość się między smakami i kadrami z podróży. Kliknij dowolną
+        miniaturę, żeby przyjrzeć się ujęciu z bliska.
+      </p>
 
-      <img id="duze" src="../img/pizza.jpg" alt="Zdjęcie wybranego dania">
-      <p id="opis-galerii">Dania z oliwą, świeżymi ziołami i miejsca, w których kuchnia smakuje najlepiej.</p>
+      <img id="duze" src="../img/pizza.jpg" alt="Zdjęcie wybranego dania" />
+      <p id="opis-galerii">
+        Dania z oliwą, świeżymi ziołami i miejsca, w których kuchnia smakuje
+        najlepiej.
+      </p>
 
       <div id="miniatury">
-        <img data-kategoria="dania" src="../img/pizza.jpg" alt="Pizza margherita"
-             onclick="document.getElementById('duze').src='../img/pizza.jpg'">
-        <img data-kategoria="dania" src="../img/spaghetti.jpg" alt="Spaghetti pomodoro"
-             onclick="document.getElementById('duze').src='../img/spaghetti.jpg'">
-        <img data-kategoria="dania" src="../img/salatka-grecka.jpg" alt="Sałatka grecka"
-             onclick="document.getElementById('duze').src='../img/salatka-grecka.jpg'">
-        <img data-kategoria="dania" src="../img/losos.jpg" alt="Łosoś z cytryną"
-             onclick="document.getElementById('duze').src='../img/losos.jpg'">
-        <img data-kategoria="kraje" src="../img/grecja.jpg" alt="Grecja"
-             onclick="document.getElementById('duze').src='../img/grecja.jpg'">
-        <img data-kategoria="kraje" src="../img/hiszpania.jpg" alt="Hiszpania"
-             onclick="document.getElementById('duze').src='../img/hiszpania.jpg'">
+        <img
+          data-kategoria="dania"
+          src="../img/pizza.jpg"
+          alt="Pizza margherita"
+          onclick="document.getElementById('duze').src = '../img/pizza.jpg'"
+        />
+        <img
+          data-kategoria="dania"
+          src="../img/spaghetti.jpg"
+          alt="Spaghetti pomodoro"
+          onclick="document.getElementById('duze').src = '../img/spaghetti.jpg'"
+        />
+        <img
+          data-kategoria="dania"
+          src="../img/salatka-grecka.jpg"
+          alt="Sałatka grecka"
+          onclick="
+            document.getElementById('duze').src = '../img/salatka-grecka.jpg'
+          "
+        />
+        <img
+          data-kategoria="dania"
+          src="../img/losos.jpg"
+          alt="Łosoś z cytryną"
+          onclick="document.getElementById('duze').src = '../img/losos.jpg'"
+        />
+        <img
+          data-kategoria="kraje"
+          src="../img/grecja.jpg"
+          alt="Grecja"
+          onclick="document.getElementById('duze').src = '../img/grecja.jpg'"
+        />
+        <img
+          data-kategoria="kraje"
+          src="../img/hiszpania.jpg"
+          alt="Hiszpania"
+          onclick="document.getElementById('duze').src = '../img/hiszpania.jpg'"
+        />
       </div>
     </main>
 
@@ -56,7 +86,5 @@
       <p>&copy; 2026 Słońce w słoiku. Wszystkie prawa zastrzeżone</p>
       <p>Autor: Łukasz Klus</p>
     </footer>
-
-    
   </body>
 </html>
