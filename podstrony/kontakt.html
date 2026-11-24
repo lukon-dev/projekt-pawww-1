@@ -1,40 +1,42 @@
 <!doctype html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/favicon.png">
-    <meta name="description" content="Projekt 1">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript">
-    <meta name="author" content="Łukasz Klus">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/favicon.png" />
+    <meta name="description" content="Projekt 1" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <meta name="author" content="Łukasz Klus" />
     <title>Kontakt – Słońce w słoiku</title>
   </head>
   <body>
     <header>
       <nav>
-  <p id="logo">
-    <a href="../index.html"
-      ><img src="../img/logo.jpg" alt="Logo Słońce w słoiku, słoik z zachodzącym słońcem">Słońce w słoiku</a
-    >
-  </p>
-  <ul>
-    <li><a href="../index.html">Strona główna</a></li>
-    <li><a href="przepisy.html">Przepisy</a></li>
-    <li><a href="kraje.html">Kraje</a></li>
-    <li><a href="galeria.html">Galeria</a></li>
-    <li><a href="porady.html">Porady kulinarne</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-  </ul>
-</nav>
+        <p id="logo">
+          <a href="../index.html"
+            ><img
+              src="../img/logo.jpg"
+              alt="Logo Słońce w słoiku, słoik z zachodzącym słońcem"
+            />Słońce w słoiku</a
+          >
+        </p>
+        <ul>
+          <li><a href="../index.html">Strona główna</a></li>
+          <li><a href="przepisy.html">Przepisy</a></li>
+          <li><a href="kraje.html">Kraje</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="porady.html">Porady kulinarne</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-    
-        <h1>Kontakt</h1>
-        <section id="formularz">
+      <h1>Kontakt</h1>
+      <section id="formularz">
         <h2>Formularz kontaktowy</h2>
         <form action="https://webdevbasics.net/scripts/demo.php" method="post">
-          <label for="tresc">Treść wiadomości</label> <br>
+          <label for="tresc">Treść wiadomości</label> <br />
           <textarea
             name="tresc"
             id="tresc"
@@ -42,18 +44,32 @@
             cols="40"
             required
           ></textarea>
+          <span>
+            <p class="blad-tresci">Pole nie może być puste..</p>
+            <span class="poprawna-tresc">✔</span>
+          </span>
           <fieldset>
             <legend>Dane kontaktowe</legend>
             <label for="imie">Imię:</label>
-            <input type="text" id="imie" name="imie" size="20" required>
-            <br>
+            <input type="text" id="imie" name="imie" size="20" required />
+            <span>
+              <p class="blad-tresci">Pole musi byc uzupelnione...</p>
+              <span class="poprawna-tresc">✔</span>
+            </span>
+            <br />
             <label for="email">E-mail:</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="np.jankowalski@gmail.com"
-              required><br>
+              required
+            />
+            <div>
+              <p class="blad-tresci">Pole musi byc uzupelnione...</p>
+              <span class="poprawna-tresc">✔</span>
+            </div>
+            <br />
             <label for="tel">Telefon:</label>
             <input
               type="tel"
@@ -62,7 +78,14 @@
               size="16"
               placeholder="123 456 789"
               pattern="(\+48)?[ \-]?[0-9]{3}[ \-]?[0-9]{3}[ \-]?[0-9]{3}"
-              title="Numer 9-cyfrowy, np. 123456789, 123 456 789 lub +48 123 456 789"><br>
+              title="Numer 9-cyfrowy, np. 123456789, 123 456 789 lub +48 123 456 789"
+              required
+            />
+            <div>
+              <p class="blad-tresci">Pole musi byc uzupelnione...</p>
+              <span class="poprawna-tresc">✔</span>
+            </div>
+            <br />
           </fieldset>
           <fieldset>
             <legend>Preferencje kontaktu</legend>
@@ -70,7 +93,8 @@
               type="checkbox"
               name="newsletter"
               id="newsletter"
-              value="tak">
+              value="tak"
+            />
             <label for="newsletter">Chcę dostawać nowe przepisy e-mailem</label>
             <p>Preferowana pora kontaktu</p>
             <input
@@ -78,20 +102,22 @@
               id="godz1"
               name="godz"
               value="08:00-12:00"
-              required>
-            <label for="godz1">8:00 - 12:00</label><br>
+              required
+            />
+            <label for="godz1">8:00 - 12:00</label><br />
 
-            <input type="radio" name="godz" id="godz2" value="12:00-18:00">
-            <label for="godz2">12:00 - 18:00</label><br>
+            <input type="radio" name="godz" id="godz2" value="12:00-18:00" />
+            <label for="godz2">12:00 - 18:00</label><br />
 
             <input
               type="radio"
               name="godz"
               id="godz3"
               value="18:00-20:00"
-              checked>
+              checked
+            />
             <label for="godz3">18:00 - 20:00</label>
-            <br>
+            <br />
             <label for="kuchnia">Kuchnia której dotyczy wiadomość:</label>
             <select name="kuchnia" id="kuchnia" required>
               <option value="">--wybierz--</option>
@@ -100,19 +126,32 @@
               <option value="hiszpanska">hiszpańska</option>
               <option value="inna">inna</option>
             </select>
+
+            <div>
+              <p class="blad-tresci">Wybierz kuchnię z listy..</p>
+              <span class="poprawna-tresc">✔</span>
+            </div>
           </fieldset>
-          
+
           <fieldset>
             <legend>Termin</legend>
 
             <label for="dataOd">Termin od:</label>
-            <input type="date" name="dataOd" id="dataOd" required><br>
+            <input type="date" name="dataOd" id="dataOd" required />
+            <div>
+              <p class="blad-tresci">Wybierz datę początkową..</p>
+              <span class="poprawna-tresc">✔</span>
+            </div>
 
             <label for="dataDo">Termin do:</label>
-            <input type="date" name="dataDo" id="dataDo" required><br>
+            <input type="date" name="dataDo" id="dataDo" required />
+            <div>
+              <p class="blad-tresci">Wybierz datę końcową..</p>
+              <span class="poprawna-tresc">✔</span>
+            </div>
           </fieldset>
-          <input type="submit" value="Wyślij">
-          <input type="reset" value="Anuluj">
+          <input type="submit" value="Wyślij" />
+          <input type="reset" value="Anuluj" />
         </form>
       </section>
     </main>
@@ -120,5 +159,6 @@
       <p>&copy; 2026 Słońce w słoiku. Wszystkie prawa zastrzeżone</p>
       <p>Autor: Łukasz Klus</p>
     </footer>
+    <script src="../javascript/formularz.js" defer></script>
   </body>
 </html>
