@@ -29,39 +29,34 @@
       </nav>
     </header>
 
-<main>
-  <h1>Galeria</h1>
-  <p>Kliknij miniaturę, aby powiększyć zdjęcie.</p>
+    <main>
+      <h1>Galeria</h1>
+      <p id="intro-galeria">Rozgość się między smakami i kadrami z podróży. Kliknij dowolną miniaturę, żeby przyjrzeć się ujęciu z bliska.</p>
 
-  <div id="filtry">
-    <button type="button" data-filtr="wszystko">Wszystko</button>
-    <button type="button" data-filtr="dania">Dania</button>
-    <button type="button" data-filtr="kraje">Kraje</button>
-  </div>
+      <img id="duze" src="../img/pizza.jpg" alt="Zdjęcie wybranego dania">
+      <p id="opis-galerii">Dania z oliwą, świeżymi ziołami i miejsca, w których kuchnia smakuje najlepiej.</p>
 
-  <img id="duze" src="../img/pizza.jpg" alt="Zdjęcie wybranego dania">
-
-  <div id="miniatury">
-    <img data-kategoria="dania" src="../img/pizza.jpg" alt="Pizza margherita"
-         onclick="document.getElementById('duze').src='../img/pizza.jpg'">
-    <img data-kategoria="dania" src="../img/spaghetti.jpg" alt="Spaghetti pomodoro"
-         onclick="document.getElementById('duze').src='../img/spaghetti.jpg'">
-    <img data-kategoria="dania" src="../img/salatka-grecka.jpg" alt="Sałatka grecka"
-         onclick="document.getElementById('duze').src='../img/salatka-grecka.jpg'">
-    <img data-kategoria="dania" src="../img/losos.jpg" alt="Łosoś z cytryną"
-         onclick="document.getElementById('duze').src='../img/losos.jpg'">
-    <img data-kategoria="kraje" src="../img/grecja.jpg" alt="Grecja"
-         onclick="document.getElementById('duze').src='../img/grecja.jpg'">
-    <img data-kategoria="kraje" src="../img/hiszpania.jpg" alt="Hiszpania"
-         onclick="document.getElementById('duze').src='../img/hiszpania.jpg'">
-  </div>
-</main>
+      <div id="miniatury">
+        <img data-kategoria="dania" src="../img/pizza.jpg" alt="Pizza margherita"
+             onclick="document.getElementById('duze').src='../img/pizza.jpg'">
+        <img data-kategoria="dania" src="../img/spaghetti.jpg" alt="Spaghetti pomodoro"
+             onclick="document.getElementById('duze').src='../img/spaghetti.jpg'">
+        <img data-kategoria="dania" src="../img/salatka-grecka.jpg" alt="Sałatka grecka"
+             onclick="document.getElementById('duze').src='../img/salatka-grecka.jpg'">
+        <img data-kategoria="dania" src="../img/losos.jpg" alt="Łosoś z cytryną"
+             onclick="document.getElementById('duze').src='../img/losos.jpg'">
+        <img data-kategoria="kraje" src="../img/grecja.jpg" alt="Grecja"
+             onclick="document.getElementById('duze').src='../img/grecja.jpg'">
+        <img data-kategoria="kraje" src="../img/hiszpania.jpg" alt="Hiszpania"
+             onclick="document.getElementById('duze').src='../img/hiszpania.jpg'">
+      </div>
+    </main>
 
     <footer>
       <p>&copy; 2026 Słońce w słoiku. Wszystkie prawa zastrzeżone</p>
       <p>Autor: Łukasz Klus</p>
     </footer>
 
-    <script src="../javascript/galeria.js" defer></script>
+    
   </body>
 </html>

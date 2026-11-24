@@ -269,7 +269,7 @@ form input[type="search"]:focus{
   min-height: 65vh;
   width: 700px;
   max-width: 100%;
-  padding: 30px 20px 40px;
+  padding: 18pxpx 18pxpx 25px;
   font-family: inherit;
   margin-top: 20px;
   border-radius: 20px;
@@ -307,11 +307,11 @@ section img{
 }
 #wyroznione img{
   width: 100%;
-  max-width: 500px;
+  max-width: 650px;
   height: 320px;
   object-fit: cover;
-  margin: 0 auto;
-  margin-top: 8px;
+  margin: 8px auto 0;
+  
 
 }
 section img:hover{
@@ -327,25 +327,80 @@ transform: scale(1.01);
   justify-content: space-between;
 }
 .przepis{
-  background-color: var(--czern-10);
-  gap: 20px;
-  border-radius: 17px;
+  
   display: none;
-  justify-content: start;
-  width: fit-content;
-  margin: 10px;
-  padding: 30px;
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background-color: #f4f7f1;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 14px rgba(85,107,47,0,08);
+  gap: 24px;
+}
+.przepis figure{
+  margin:  0;
+  flex-shrink: 0;
+}
+.przepis figcaption{
+  width: 280px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #5d6d49;
+}
+.przepis figcaption a {
+  color: #395517;
+  
+  
+ 
 }
 .przepis:first-of-type{
   display: flex;
+  
 }
 .przepis img{
-  height: 300px;
-  width: 300px;
+  width: 280px;
+  height: 210px;
   object-fit: cover;
+  border-radius: 12px;
+
 }
+
 section{
   text-align: center;
+}
+.tresc table{
+  width: 100%;
+  max-width: 360px;
+  border-collapse: collapse;
+}
+.tresc caption{
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.tresc h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #4f6336;
+}
+
+.tresc th,
+.tresc td{
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  text-align: left;
+}
+.tresc th{
+  font-weight: bold;
+  border-bottom-width: 2px;
+}
+.tresc td:last-child,
+.tresc th:last-child{
+  text-align: right;
 }
 
 .trudnosc{
@@ -389,19 +444,34 @@ section{
   
    
 }
+#wyroznione h2 {
+   color: #d4e157;
+  margin: 6px 0 10px;
+}
+#wyroznione figure{
+  margin: 12px 0;
+  width: 100%;
+}
 
 section ul li{
   list-style: none;
 }
 #prevBtn, #nextBtn{
-  width: 100px;
-  height: 50px;
+  width: 56px;
+  height: 38px;
   margin: 10px;
-  border: 1px solid var(--czern-10);
-  border-radius: 20px;
-  box-shadow: 0 0 3px 2px rgb(3, 46, 3);
+  border-radius: 12px;
+  background-color: #f4f7f1;
+  color: #4f6336;
+  border: 1px solid rgba(107, 127, 78, 0.35);
+  box-shadow: 0 2px 6px rgba(85, 107, 47, 0.08);
+  font-size: 18px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 #prevBtn:hover, #nextBtn:hover{
+  background-color: #e6edd8;
+  border-color: rgba(79, 99, 54, 0.6);
+  transform: translateY(-1px);
   cursor: pointer;
 }
 .lista-porad{
@@ -415,6 +485,7 @@ section ul li{
   margin: 5px;
 
 }
+
 #intro h1{
   color: var(--jasny);
 }
@@ -427,7 +498,7 @@ h1, h2{
 .porada-karta{
  border-top: 5px double var(--oliwkowy);
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 450px;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   padding: 10px;
@@ -472,7 +543,7 @@ top: 0;
   object-fit: cover;
 }
 #duze{
-max-width: 50%;
+max-width: 540px;
 object-fit: cover;
 margin: 30px;
 transition: ease 0.5s;
@@ -484,15 +555,122 @@ transform: scale(1.05);
 #miniatury{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #miniatury img{
   margin: 10px;
-  width: 50%;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
 }
 #miniatury img:hover{
   border: 5px solid var(--oliwkowy);
   border-radius: 10px;
   margin: 10px;
-  width: 50%;
+  width: 180px;
+  height: 120px;
   cursor: pointer;
+}
+#intro-galeria{
+  color: #4f6336;
+  font-size: 16px;
+}
+#opis-galerii{
+  color: #5d6d49;
+  font-style: italic;
+  font-size: 14px;
+}
+.porada-karta figcaption{
+  color: #5d6d49;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.porada-karta p{
+  color: #2c3520;
+  line-height: 1.55;
+  margin-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.porady-hero p{
+  color: #4f6336;
+  font-size: 16px;
+  max-width: 680px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media(max-width: 768px){
+header{
+  position: static;
+}
+nav{
+  flex-direction: column;
+  padding: 10px;
+}
+nav p{
+  margin: 0 0 8px 0;
+}
+#logo a{
+  font-size: 24px;
+}
+#logo img{
+  width: 65px;
+  height: 65px;
+}
+nav ul{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1{
+  font-size: 42px;
+}
+.kraj{
+  flex-direction: column;
+  align-items: center;
+}
+.kraj img{
+  width: 240px;
+  height: 240px;
+}
+.box2{
+  margin-top: 12px;
+}
+}
+@media (max-width: 480px){
+  h1{
+    font-size: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  #logo img{
+    width: 52px;
+    height: 52px;
+  }
+  #logo a{
+    font-size: 20px;
+  }
+  #duze{
+    width: 280px;
+    height: 185px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+  .porada-karta{
+    max-width: 94%;
+    padding: 8px;
+  }
+  .porada-karta p{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .kraj img{
+    width: 200px;
+    height: 200px;
+  }
+  footer p{
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
 }
