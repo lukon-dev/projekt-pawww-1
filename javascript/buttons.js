@@ -39,6 +39,7 @@ let cofnij=()=>{
 if(location.hash === "#salatka-grecka"){
         SALATKAGRECKA.style.display = "flex";
         PRZEPISY[0].style.display = "none";
+        current = 2;
     }
 
 
