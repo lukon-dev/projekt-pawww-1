@@ -523,7 +523,23 @@ h2 {
 .porada-karta:hover {
   transform: scale(1.01);
 }
-
+.box2 details {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px 14px;
+  background-color: #f4f7f1;
+  border: 1px solid var(--szary);
+  border-left: 4px solid var(--oliwkowy);
+  border-radius: 10px;
+}
+.box2 summary {
+  color: var(--oliwkowy);
+  cursor: pointer;
+  font-weight: bold;
+}
+.box2 summary:hover {
+  color: var(--zielony-ciemny);
+}
 #czasData {
   width: 130px;
   height: 130px;
@@ -647,9 +663,11 @@ h2 {
     width: 240px;
     height: 240px;
   }
+  
   .box2 {
     margin-top: 12px;
   }
+  
   .przepis {
     flex-direction: column;
     align-items: center;
