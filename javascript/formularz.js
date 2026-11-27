@@ -180,8 +180,8 @@ KUCHNIA.addEventListener("change", sprawdzKuchnie);
 const FORMULARZ = document.querySelector("form");
 let wyczyscFormularz = () => {
   BLAD_TRESCI.style.display = "none";
-POPRAWNA_TRESC.style.display = "none";
-TRESC.style.borderColor = "";
+  POPRAWNA_TRESC.style.display = "none";
+  TRESC.style.borderColor = "";
 
   BLAD_IMIENIA.style.display = "none";
   POPRAWNE_IMIE.style.display = "none";
@@ -209,20 +209,19 @@ TRESC.style.borderColor = "";
 };
 FORMULARZ.addEventListener("reset", wyczyscFormularz);
 
-let wyslijFormularz = (e)=>{
-sprawdzTresc();
-sprawdzImie();
-sprawdzEmail();
-sprawdzTel();
-sprawdzDataOd();
-sprawdzDataDo();
-sprawdzKuchnie();
+let wyslijFormularz = (e) => {
+  sprawdzTresc();
+  sprawdzImie();
+  sprawdzEmail();
+  sprawdzTel();
+  sprawdzDataOd();
+  sprawdzDataDo();
+  sprawdzKuchnie();
 
-const POLA = [TRESC, IMIE, EMAIL, TEL, DATA_OD, DATA_DO, KUCHNIA];
-if(POLA.some((pole) => pole.style.borderColor === "red")){
-  e.preventDefault();
-}
+  const POLA = [TRESC, IMIE, EMAIL, TEL, DATA_OD, DATA_DO, KUCHNIA];
+  if (POLA.some((pole) => pole.style.borderColor === "red")) {
+    e.preventDefault();
+  }
+};
 
-}
-
-FORMULARZ.addEventListener('submit',wyslijFormularz);
+FORMULARZ.addEventListener("submit", wyslijFormularz);
